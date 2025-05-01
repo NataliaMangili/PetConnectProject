@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetConnectWebAPI", "PetConnectWebAPI\PetConnectWebAPI.csproj", "{C8509361-3FC0-4568-B1E3-63204FE52212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetConnectWebAPI", "gateway\PetConnectWebAPI\PetConnectWebAPI.csproj", "{B3E3AAE7-1109-435C-8648-32B5A169AE92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateway", "gateway", "{A2DEBF9A-4D29-4961-BFA1-9097F1E6F565}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{E0ED1FF0-C2ED-44ED-A3EC-2177516CB31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "shared\Utilities\Utilities.csproj", "{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D91C5670-6BF3-464F-9CD9-6B8A1439BB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityAPI", "src\IdentityAPI\IdentityAPI.csproj", "{57578D06-08F4-4D0F-946F-48BCE22887EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +21,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8509361-3FC0-4568-B1E3-63204FE52212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8509361-3FC0-4568-B1E3-63204FE52212}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8509361-3FC0-4568-B1E3-63204FE52212}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8509361-3FC0-4568-B1E3-63204FE52212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E3AAE7-1109-435C-8648-32B5A169AE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E3AAE7-1109-435C-8648-32B5A169AE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E3AAE7-1109-435C-8648-32B5A169AE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E3AAE7-1109-435C-8648-32B5A169AE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57578D06-08F4-4D0F-946F-48BCE22887EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57578D06-08F4-4D0F-946F-48BCE22887EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57578D06-08F4-4D0F-946F-48BCE22887EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57578D06-08F4-4D0F-946F-48BCE22887EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3E3AAE7-1109-435C-8648-32B5A169AE92} = {A2DEBF9A-4D29-4961-BFA1-9097F1E6F565}
+		{97AF96C9-1CE8-4525-8C1C-96F8F50DB7E0} = {E0ED1FF0-C2ED-44ED-A3EC-2177516CB31E}
+		{57578D06-08F4-4D0F-946F-48BCE22887EF} = {D91C5670-6BF3-464F-9CD9-6B8A1439BB57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {371807A0-D738-485B-877C-C7F733BAB0BB}
