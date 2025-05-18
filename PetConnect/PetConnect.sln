@@ -25,19 +25,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyProfile", "MyProfile", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyProfileAPI", "src\MyProfile\MyProfileAPI\MyProfileAPI.csproj", "{06B922EF-BE76-4B78-A13F-A55C201EE416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportAPI", "src\PetSupport\PetSupportAPI\PetSupportAPI.csproj", "{83995655-299C-42EE-84F9-2C640D19E794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportAPI", "src\PetSupport\PetSupportAPI\PetSupportAPI.csproj", "{83995655-299C-42EE-84F9-2C640D19E794}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PetSupport", "PetSupport", "{CD2D4D0C-4704-46EE-8A92-5CC964528F77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportInfra", "src\PetSupport\PetSupportInfra\PetSupportInfra.csproj", "{8F2E3B4C-560D-4A4D-9D06-B81F9D14D503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportInfra", "src\PetSupport\PetSupportInfra\PetSupportInfra.csproj", "{8F2E3B4C-560D-4A4D-9D06-B81F9D14D503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportApplication", "src\PetSupport\PetSupportApplication\PetSupportApplication.csproj", "{6D4C9AF7-A6DB-4105-8176-488211FABAF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportApplication", "src\PetSupport\PetSupportApplication\PetSupportApplication.csproj", "{6D4C9AF7-A6DB-4105-8176-488211FABAF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportDomain", "src\PetSupport\PetSupportDomain\PetSupportDomain.csproj", "{FF87A6A5-94C5-465C-B977-E86E8E37CD87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportDomain", "src\PetSupport\PetSupportDomain\PetSupportDomain.csproj", "{FF87A6A5-94C5-465C-B977-E86E8E37CD87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceAPI", "src\Marketplace\MarketplaceAPI\MarketplaceAPI.csproj", "{9101E8B0-F389-4D38-96C3-788577D7D51E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketplaceAPI", "src\Marketplace\MarketplaceAPI\MarketplaceAPI.csproj", "{9101E8B0-F389-4D38-96C3-788577D7D51E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Marketplace", "Marketplace", "{F097EF73-8D63-44E5-80A4-3E8789629894}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "adapters", "adapters", "{14D90099-0193-41A5-86CC-90C151897F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kafka", "adapters\Kafka\Kafka.csproj", "{C045C15A-B9C4-4756-9088-45BC3DEB66C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "adapters\Logging\Logging.csproj", "{2771A650-45BB-4923-A96A-24F69F2DCA9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticSearch", "adapters\ElasticSearch\ElasticSearch.csproj", "{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +97,18 @@ Global
 		{9101E8B0-F389-4D38-96C3-788577D7D51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9101E8B0-F389-4D38-96C3-788577D7D51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9101E8B0-F389-4D38-96C3-788577D7D51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C045C15A-B9C4-4756-9088-45BC3DEB66C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C045C15A-B9C4-4756-9088-45BC3DEB66C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C045C15A-B9C4-4756-9088-45BC3DEB66C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C045C15A-B9C4-4756-9088-45BC3DEB66C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2771A650-45BB-4923-A96A-24F69F2DCA9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2771A650-45BB-4923-A96A-24F69F2DCA9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2771A650-45BB-4923-A96A-24F69F2DCA9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2771A650-45BB-4923-A96A-24F69F2DCA9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -109,6 +129,9 @@ Global
 		{FF87A6A5-94C5-465C-B977-E86E8E37CD87} = {CD2D4D0C-4704-46EE-8A92-5CC964528F77}
 		{9101E8B0-F389-4D38-96C3-788577D7D51E} = {F097EF73-8D63-44E5-80A4-3E8789629894}
 		{F097EF73-8D63-44E5-80A4-3E8789629894} = {D91C5670-6BF3-464F-9CD9-6B8A1439BB57}
+		{C045C15A-B9C4-4756-9088-45BC3DEB66C1} = {14D90099-0193-41A5-86CC-90C151897F80}
+		{2771A650-45BB-4923-A96A-24F69F2DCA9C} = {14D90099-0193-41A5-86CC-90C151897F80}
+		{DD185E24-5872-4FB7-BBAC-B6A90D7CEE6E} = {14D90099-0193-41A5-86CC-90C151897F80}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {371807A0-D738-485B-877C-C7F733BAB0BB}
