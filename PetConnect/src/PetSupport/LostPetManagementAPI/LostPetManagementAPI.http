@@ -1,0 +1,6 @@
+@LostPetManagementAPI_HostAddress = http://localhost:5031
+
+GET {{LostPetManagementAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
