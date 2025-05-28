@@ -1,0 +1,6 @@
+@AdoptionManagementAPI_HostAddress = http://localhost:5010
+
+GET {{AdoptionManagementAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
