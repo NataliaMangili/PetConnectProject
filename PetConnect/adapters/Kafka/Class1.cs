@@ -1,4 +1,4 @@
-﻿namespace PetSupportDomain
+﻿namespace Kafka
 {
     public class Class1
     {

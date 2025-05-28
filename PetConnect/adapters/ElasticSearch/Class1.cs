@@ -1,4 +1,4 @@
-﻿namespace PetSupportApplication
+﻿namespace ElasticSearch
 {
     public class Class1
     {

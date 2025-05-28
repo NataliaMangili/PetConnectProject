@@ -1,4 +1,4 @@
-﻿namespace PetSupportInfra
+﻿namespace Logging
 {
     public class Class1
     {
