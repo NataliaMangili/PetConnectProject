@@ -1,4 +1,4 @@
-﻿using IdentityCore.Enums;
+﻿using IdentityCore.Domain.Entities.Enums;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCore.Entities;
+namespace IdentityCore.Domain.Entities;
 
 public class ApplicationUser : IdentityUser
 {

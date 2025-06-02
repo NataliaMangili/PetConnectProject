@@ -14,4 +14,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\IdentityCore\IdentityCore.csproj" />
+    <ProjectReference Include="..\IdentityInfra\IdentityInfra.csproj" />
+  </ItemGroup>
+
 </Project>

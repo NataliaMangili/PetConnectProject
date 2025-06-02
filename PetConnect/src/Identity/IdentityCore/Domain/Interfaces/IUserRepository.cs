@@ -5,9 +5,9 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCore.Interfaces;
+namespace IdentityCore.Domain.Interfaces;
 
-public interface IAuthService
+public interface IUserRepository
 {
     Task<AuthResponse> RegisterAsync(RegisterRequest request);
     Task<AuthResponse> LoginAsync(LoginRequest request);

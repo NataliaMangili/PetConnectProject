@@ -7,14 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Events\" />
-    <Folder Include="Exceptions\" />
-    <Folder Include="Services\" />
-    <Folder Include="ValueObjects\" />
+    <Folder Include="Authentication\Mappers\" />
+    <Folder Include="Domain\Events\" />
+    <Folder Include="Profile\DTOs\" />
+    <Folder Include="Registration\" />
+    <Folder Include="Domain\ValueObjects\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\Utilities\Utilities.csproj" />
   </ItemGroup>
 
 </Project>

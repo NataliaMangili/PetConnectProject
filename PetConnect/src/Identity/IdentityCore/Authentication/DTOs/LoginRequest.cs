@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IdentityCore.Authentication.DTOs
 {
-    internal class LoguinRequest
+    internal class LoginRequest
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityCore.Enums;
+namespace IdentityCore.Domain.Entities.Enums;
 
 public enum UserType
 {
