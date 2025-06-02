@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace LostPetManagementAPI.Controllers
+namespace PetSupportAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

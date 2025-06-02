@@ -1,4 +1,4 @@
-namespace RescueManagementAPI
+namespace PetSupportAPI
 {
     public class WeatherForecast
     {
