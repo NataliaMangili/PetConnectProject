@@ -9,7 +9,7 @@ namespace IdentityCore.Domain.Interfaces;
 
 public interface IUserRepository
 {
-    Task<AuthResponse> RegisterAsync(RegisterRequest request);
-    Task<AuthResponse> LoginAsync(LoginRequest request);
-    Task<UserProfileResponse> GetCurrentUserAsync(ClaimsPrincipal user);
+    //Task<AuthResponse> RegisterAsync(RegisterRequest request);
+    //Task<AuthResponse> LoginAsync(LoginRequest request);
+    //Task<UserProfileResponse> GetCurrentUserAsync(ClaimsPrincipal user);
 }

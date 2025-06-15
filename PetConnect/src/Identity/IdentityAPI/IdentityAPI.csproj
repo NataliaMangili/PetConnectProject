@@ -20,4 +20,10 @@
     <ProjectReference Include="..\IdentityInfra\IdentityInfra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Filters\" />
+  </ItemGroup>
+
 </Project>
