@@ -45,13 +45,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetConnect.UnitTests", "tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetConnect.IntegrationTests", "tests\PetConnect.IntegrationTests\PetConnect.IntegrationTests.csproj", "{82F6B68B-AAB1-4B19-B018-712ADA883AA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportAPI", "src\PetSupport\PetSupportAPI\PetSupportAPI.csproj", "{D0EAA0F3-EC1D-42BE-AFBF-3CB8B8754366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportAPI", "src\PetSupport\PetSupportAPI\PetSupportAPI.csproj", "{D0EAA0F3-EC1D-42BE-AFBF-3CB8B8754366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportDomain", "src\PetSupport\PetSupportDomain\PetSupportDomain.csproj", "{20F74FE2-A670-43D8-8639-5309A3AD4E06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportDomain", "src\PetSupport\PetSupportDomain\PetSupportDomain.csproj", "{20F74FE2-A670-43D8-8639-5309A3AD4E06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportApplication", "src\PetSupport\PetSupportApplication\PetSupportApplication.csproj", "{0378D2D3-694E-4C8B-897E-D2EAE99CEB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportApplication", "src\PetSupport\PetSupportApplication\PetSupportApplication.csproj", "{0378D2D3-694E-4C8B-897E-D2EAE99CEB73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSupportInfra", "src\PetSupport\PetSupportInfra\PetSupportInfra.csproj", "{E8489D56-B769-41F0-AC18-4ABF112B6768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetSupportInfra", "src\PetSupport\PetSupportInfra\PetSupportInfra.csproj", "{E8489D56-B769-41F0-AC18-4ABF112B6768}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@ namespace PetSupportDomain.Shared.ValueObjects
 {
 
     //DEIXAR NO SHARED??
-    internal class Image
+    public class Image
     {
     }
 }

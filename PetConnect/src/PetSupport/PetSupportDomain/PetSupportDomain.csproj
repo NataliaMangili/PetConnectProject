@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Adoption\Exceptions\" />
+    <Folder Include="LostPet\Interfaces\" />
+    <Folder Include="Rescue\Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Bson" Version="3.4.0" />
+  </ItemGroup>
+
 </Project>
