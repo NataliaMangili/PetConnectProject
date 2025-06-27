@@ -1,11 +1,7 @@
 ﻿using MongoDB.Driver;
 using PetSupportInfra.Persistence.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using PetSupportInfra.Persistence.Repositories.Base.Interfaces;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PetSupportInfra.Persistence.Repositories.Base;
 
