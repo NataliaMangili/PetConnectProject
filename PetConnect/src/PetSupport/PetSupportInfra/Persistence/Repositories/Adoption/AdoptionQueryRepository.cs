@@ -1,13 +1,8 @@
 ﻿using MongoDB.Driver;
-using PetSupportDomain.Adoption.Models;
+using PetSupportDomain.Shared.Entitys;
 using PetSupportInfra.Persistence.Context;
-using PetSupportInfra.Persistence.Repositories.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using PetSupportInfra.Persistence.Repositories.Base.Interfaces;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PetSupportInfra.Persistence.Repositories.Adoption;
 
@@ -33,6 +28,16 @@ public class AdoptionQueryRepository : IBaseQueryRepository<AdoptionPet>
     public async Task<IEnumerable<AdoptionPet>> FindAsync(Expression<Func<AdoptionPet, bool>> filter)
     {
         return (await _collection.FindAsync(filter)).ToList();
+    }
+
+    Task<List<AdoptionPet>> IBaseQueryRepository<AdoptionPet>.GetAllAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<List<AdoptionPet>> FilterAsync(Expression<Func<AdoptionPet, bool>> filter)
+    {
+        throw new NotImplementedException();
     }
 }
 

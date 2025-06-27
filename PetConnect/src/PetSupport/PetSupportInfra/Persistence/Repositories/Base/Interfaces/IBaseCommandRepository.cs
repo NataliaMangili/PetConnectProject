@@ -1,8 +1,10 @@
-﻿namespace PetSupportInfra.Persistence.Repositories.Base.Interfaces;
+﻿using PetSupportDomain.Shared.Interfaces;
 
-public interface IBaseCommandRepository<T> where T : class
+namespace PetSupportInfra.Persistence.Repositories.Base.Interfaces;
+
+public interface IBaseCommandRepository<T> where T : IAggregateRoot
 {
-    Task<T> InsertAsync(T entity);
-    Task UpdateAsync(string id, T entity);
+    Task AddAsync(T entity);
+    Task UpdateAsync(T entity);
     Task DeleteAsync(string id);
 }

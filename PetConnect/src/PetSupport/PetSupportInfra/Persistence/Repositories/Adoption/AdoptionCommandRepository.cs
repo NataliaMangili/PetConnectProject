@@ -1,31 +1,22 @@
-﻿using MongoDB.Driver;
-using PetSupportInfra.Persistence.Context;
+﻿using PetSupportInfra.Persistence.Context;
 using PetSupportInfra.Persistence.Repositories.Base;
+using MongoDB.Driver;
 using PetSupportDomain.Adoption.Models;
+using PetSupportDomain.Adoption.Interfaces;
 
 namespace PetSupportInfra.Persistence.Repositories.Adoption;
 
-public class AdoptionCommandRepository : IBaseCommandRepository<AdoptionPet>
+public class AdoptionCommandRepository : IAdoptionCommandRepository
 {
-    private readonly IMongoCollection<AdoptionPet> _collection;
+    private readonly IMongoCollection<AdoptionPetAggregate> _collection;
 
     public AdoptionCommandRepository(MongoDbContext context)
     {
-        _collection = context.GetCollection<AdoptionPet>("Adoptions");
+        _collection = context.GetCollection<AdoptionPetAggregate>("Adoptions");
     }
 
-    public async Task AddAsync(AdoptionPet entity)
+    public async Task InsertAsync(AdoptionPetAggregate aggregate)
     {
-        await _collection.InsertOneAsync(entity);
-    }
-
-    public async Task UpdateAsync(string id, AdoptionPet entity)
-    {
-        await _collection.ReplaceOneAsync(x => x.Id == id, entity);
-    }
-
-    public async Task DeleteAsync(string id)
-    {
-        await _collection.DeleteOneAsync(x => x.Id == id);
+        await _collection.InsertOneAsync(aggregate);
     }
 }
