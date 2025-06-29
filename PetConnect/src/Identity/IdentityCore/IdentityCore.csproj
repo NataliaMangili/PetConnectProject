@@ -7,15 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Authentication\Mappers\" />
-    <Folder Include="Domain\Events\" />
-    <Folder Include="Profile\DTOs\" />
-    <Folder Include="Registration\" />
     <Folder Include="Domain\ValueObjects\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
