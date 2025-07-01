@@ -1,7 +1,7 @@
 ﻿using IdentityCore.Domain.Entities;
-using IdentityCore.Interfaces;
 using IdentityCore.Login.DTOS;
 using IdentityCore.Register.DTOs;
+using IdentityCore.Register.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,22 +11,25 @@ namespace IdentityAPI.Controllers;
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
-    private readonly IRegistrationService<CommonUserRegisterDto> _commonUserService;
+    private readonly IRegistrationService<UserRegisterDto> _commonUserService;
     private readonly IRegistrationService<OngRegisterDto> _ongService;
-    private readonly IRegistrationService<IndependentProtectorRegisterDto> _protectorService;
+    private readonly IRegistrationService<ProtectorRegisterDto> _protectorService;
+    private readonly SignInManager<ApplicationUser> _signInManager;
 
     public AuthController(
-        IRegistrationService<CommonUserRegisterDto> commonUserService,
+        IRegistrationService<UserRegisterDto> commonUserService,
         IRegistrationService<OngRegisterDto> ongService,
-        IRegistrationService<IndependentProtectorRegisterDto> protectorService)
+        IRegistrationService<ProtectorRegisterDto> protectorService,
+        SignInManager<ApplicationUser> signInManager)
     {
         _commonUserService = commonUserService;
         _ongService = ongService;
         _protectorService = protectorService;
+        _signInManager = signInManager;
     }
 
     [HttpPost("register/common")]
-    public async Task<IActionResult> RegisterCommonUser([FromBody] CommonUserRegisterDto dto)
+    public async Task<IActionResult> RegisterCommonUser([FromBody] UserRegisterDto dto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
 
@@ -44,7 +47,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register/protector")]
-    public async Task<IActionResult> RegisterProtector([FromBody] IndependentProtectorRegisterDto dto)
+    public async Task<IActionResult> RegisterProtector([FromBody] ProtectorRegisterDto dto)
     {
         if (!ModelState.IsValid) return BadRequest(ModelState);
 
