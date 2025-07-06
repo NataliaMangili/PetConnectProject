@@ -1,9 +1,6 @@
-﻿using global::MyProfileAPI.Models.Widgets;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MyProfileAPI.Domain.Models;
 using MyProfileAPI.Domain.Models.Widgets;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 
 namespace MyProfileAPI.Infra.Persistence;
 
@@ -21,7 +18,7 @@ public class MyProfileDbContext : DbContext
         modelBuilder.Entity<Profile>().HasKey(x => x.Id);
 
         modelBuilder.Entity<Profile>()
-            .OwnsMany(p => p.Gallery, b =>
+            .OwnsMany(p => p.Photos, b =>
             {
                 b.WithOwner().HasForeignKey("ProfileId");
                 b.Property<Guid>("Id");
